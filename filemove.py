@@ -1,8 +1,13 @@
 import os
 import shutil
 from pathlib import Path
+from tkinter import filedialog
+from tkinter import *
 
-source_folder = Path(r'C:/Users/Trevor/Documents/VeriCloud/')
+root = Tk()
+root.withdraw()
+source_folder= filedialog.askdirectory()
+#source_folder = Path(r'C:/Users/Trevor/Documents/VeriCloud/')
 dest_folder = ""
 extension = ""
 
