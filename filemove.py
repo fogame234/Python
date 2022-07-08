@@ -14,14 +14,14 @@ def fileChoice(dest_folder, extension):
     choice = input("Moving CSV or SQL files? ")
 
     if choice == "csv":
-        root = Tk()
-        root.withdraw()
+        fileWindow = Tk()
+        fileWindow.withdraw()
         dest_folder = filedialog.askdirectory()        
         extension = '.csv'
 
     if choice == "sql":
-        root = Tk()
-        root.withdraw()
+        fileWindow = Tk()
+        fileWindow.withdraw()
         dest_folder = filedialog.askdirectory()   
         extension = '.sql'
 
