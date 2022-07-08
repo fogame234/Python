@@ -15,11 +15,15 @@ def fileChoice(dest_folder, extension):
     choice = input("Moving CSV or SQL files? ")
 
     if choice == "csv":
-        dest_folder = Path(r'C:/Users/Trevor/Documents/TestVeriCloud/CSV/')
+        root = Tk()
+        root.withdraw()
+        dest_folder = filedialog.askdirectory()        
         extension = '.csv'
 
     if choice == "sql":
-        dest_folder = Path(r'C:/Users/Trevor/Documents/TestVeriCloud/')
+        root = Tk()
+        root.withdraw()
+        dest_folder = filedialog.askdirectory()   
         extension = '.sql'
 
     return dest_folder, extension
