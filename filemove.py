@@ -4,8 +4,8 @@ from pathlib import Path
 from tkinter import filedialog
 from tkinter import *
 
-root = Tk()
-root.withdraw()
+fileWindow = Tk()
+fileWindow.withdraw()
 source_folder = filedialog.askdirectory()
 dest_folder = ""
 extension = ""
