@@ -1,7 +1,7 @@
 import os
 import natsort
 
-source_folder = r"C:/Users/Trevor/Documents/VeriCloud/Test/"
+source_folder = r"/path"
 
 count = int(1)
 
