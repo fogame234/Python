@@ -1,8 +1,8 @@
 import natsort
 import os
 
-source_folder = r"C:/Users/Trevor/Documents/VeriCloud/Test/"
-dest_folder = r"C:/Users/Trevor/Documents/VeriCloud/Test/"
+source_folder = r"/path"
+dest_folder = r"/path"
 
 count = int(1)
 for file in natsort.os_sorted(os.listdir(source_folder)):
