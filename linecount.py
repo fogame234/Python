@@ -2,7 +2,7 @@ import time
 import os
 
 finalStart = time.perf_counter()
-source_folder = r"C:/Users/Trevor/Documents/VeriCloud/Test/"
+source_folder = r"/path"
 def _count_generator(reader):
     b = reader(1024 * 1024)
     while b:
