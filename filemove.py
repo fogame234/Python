@@ -40,10 +40,10 @@ for root, dirs, files in os.walk(source_folder):
                 continue
             else:
                 if src_path.suffix == ".sql":
-                    dest_folder = r"C:\Users\Trevor\Documents\TestVericloud\sql"
+                    dest_folder = r"/path"
                     dest_path = Path(dest_folder).joinpath(rel_path)                    
                 if src_path.suffix != ".sql":
-                    dest_folder = r"C:\Users\Trevor\Documents\TestVericloud\CSV"
+                    dest_folder = r"/path"
                     dest_path = Path(dest_folder).joinpath(rel_path) 
                 print("Scanning: " + str(src_path))
                 if os.path.isfile(src_path):
