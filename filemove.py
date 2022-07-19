@@ -2,6 +2,7 @@ import os
 import shutil
 from pathlib import Path
 from tkinter import filedialog
+from tkinter import *
 
 fileWindow = Tk()
 fileWindow.withdraw()
