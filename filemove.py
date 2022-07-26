@@ -71,6 +71,8 @@ for root, dirs, files in os.walk(source_folder):
                     isfile = True
                     if isfile and parentDir == source_folder:
                         continue
+                if src_path.suffix == ".txt":
+                  continue
                 dest_no.parent.mkdir(parents=True, exist_ok=True)
                 move_file(src_path.parent, dest_no.parent, fn)
                 print("File Moved: " + str(src_path))
